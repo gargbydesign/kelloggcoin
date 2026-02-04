@@ -34,10 +34,13 @@ evan = 0
 anthony = 0
 
 for transaction in blockchain
-  #calculating all the incoming balance
+  
+  #creating variables for ease
   from = transaction["from_user"]
   to = transaction["to_user"]
   amount = transaction["amount"]
+
+  #calculating all the incoming balance
   if to == "ben"
     ben = ben + amount
   elsif to == "brian"
