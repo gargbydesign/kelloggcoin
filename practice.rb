@@ -46,6 +46,7 @@ for transaction in blockchain
   elsif to == "anthony"
     anthony = anthony + amount
   end
+  
   if from == "ben"
     ben = ben - amount
   elsif from == "brian"
