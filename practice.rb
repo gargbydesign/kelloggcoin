@@ -57,4 +57,7 @@ for transaction in blockchain
   end
 end
 
-puts ben, brian, evan, anthony 
+puts "Ben's KelloggCoin balance is #{ben}"
+puts "Evan's KelloggCoin balance is #{evan}"
+puts "Brian's KelloggCoin balance is #{brian}"
+puts "Anthony's KelloggCoin balance is #{anthony}"
