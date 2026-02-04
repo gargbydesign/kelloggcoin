@@ -27,3 +27,25 @@ blockchain = [
 # Anthony's KelloggCoin balance is 2650
 
 # 👇👇👇 Your code HERE 👇👇👇
+
+ben = 0
+brian = 0
+evan = 0
+anthony = 0
+
+for transaction in blockchain
+  from = transaction["from_user"]
+  to = transaction["to_user"]
+  amount = transaction["amount"]
+  if to == "ben"
+    ben = ben + amount
+  elsif to == "brian"
+    brian = brian + amount
+  elsif to == "evan"
+    evan = evan + amount
+  elsif to == "anthony"
+    anthony == anthony + amount
+  end
+end
+
+puts ben, brian, evan, anthony 
