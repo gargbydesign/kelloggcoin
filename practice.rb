@@ -34,6 +34,7 @@ evan = 0
 anthony = 0
 
 for transaction in blockchain
+  #calculating all the incoming balance
   from = transaction["from_user"]
   to = transaction["to_user"]
   amount = transaction["amount"]
@@ -46,7 +47,8 @@ for transaction in blockchain
   elsif to == "anthony"
     anthony = anthony + amount
   end
-  
+
+  #calculating all the outgoing balances
   if from == "ben"
     ben = ben - amount
   elsif from == "brian"
@@ -55,6 +57,7 @@ for transaction in blockchain
     evan = evan - amount
   elsif from == "anthony"
     anthony = anthony - amount
+
   end
 end
 
